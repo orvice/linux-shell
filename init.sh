@@ -6,8 +6,7 @@ apt-get install -y git curl vim vnstat tmux nscd  dnsutils sudo net-tools zsh gn
 echo "set iptables"
 update-alternatives --config iptables
 
-echo "Installing zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 
 
 
@@ -50,3 +49,7 @@ apt-cache madison docker-ce
 echo "Install docker-compose"
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+
+
+echo "Installing zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
