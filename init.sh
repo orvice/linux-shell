@@ -42,9 +42,9 @@ sudo add-apt-repository \
    stable"
    
 sudo apt-get update
-sudo apt-get -y install docker-ce docker-ce-cli containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-apt-cache madison docker-ce
+apt-cache madison docker-ce 
 
 echo "Install docker-compose"
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
